@@ -1,0 +1,106 @@
+<template name="searchBlockComponent">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h4>Search Block</h4>
+        </div>
+        <table class="table">
+            <tbody>
+            <tr>
+                <th scope="row">Input Block No.</th>
+                <td>
+                    <form class="form-horizontal">
+                        {{> searchBlockTemplate inputId="blockNo"}}
+                        <input type="submit" value="submit" class="btn btn-primary col-md-offset-6"/>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Difficulty</th>
+                <td>{{difficulty}}</td>
+            </tr>
+            <tr>
+                <th scope="row">ExtraData</th>
+                <td>{{extraData}}</td>
+            </tr>
+            <tr>
+                <th scope="row">gasLimit</th>
+                <td>{{gasLimit}}</td>
+            </tr>
+            <tr>
+                <th scope="row">gasUsed</th>
+                <td>{{gasUsed}}</td>
+            </tr>
+            <tr>
+                <th scope="row">hash</th>
+                <td>{{hash}}</td>
+            </tr>
+            <!--<tr>
+                <th scope="row">LogsBloom</th>
+                <td>{{LogsBloom}}</td>
+            </tr>-->
+            <tr>
+                <th scope="row">miner</th>
+                <td>{{miner}}</td>
+            </tr>
+            <tr>
+                <th scope="row">nonce</th>
+                <td>{{nonce}}</td>
+            </tr>
+            <tr>
+                <th scope="row">number</th>
+                <td>{{number}}</td>
+            </tr>
+            <tr>
+                <th scope="row">parentHash</th>
+                <td>{{parentHash}}</td>
+            </tr>
+            <tr>
+                <th scope="row">receiptRoot</th>
+                <td>{{receiptRoot}}</td>
+            </tr>
+            <tr>
+                <th scope="row">sha3Uncle</th>
+                <td>{{sha3Uncle}}</td>
+            </tr>
+            <tr>
+                <th scope="row">size</th>
+                <td>{{size}}</td>
+            </tr>
+            <tr>
+                <th scope="row">stateRoot</th>
+                <td>{{stateRoot}}</td>
+            </tr>
+          <tr>
+                <th scope="row">timestamp</th>
+                <td>{{timestamp}}</td>
+            </tr>
+            <tr>
+                <th scope="row">totalDifficulty</th>
+                <td>{{totalDifficulty}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Transactions</th>
+                <td>{{Transactions}}</td>
+            </tr>
+            <tr>
+                <th scope="row">transactionsRoot</th>
+                <td>{{transactionsRoot}}</td>
+            </tr>
+            <tr>
+                <th scope="row">uncles</th>
+                <td>{{uncles}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</template>
+
+
+<template name="searchBlockTemplate">
+    <div class="form-group">
+        <!--<label class="control-label col-md-3">{{labelStr}}</label>-->
+        <div class="controls col-md-6">
+            <input name="{{inputId}}" id="{{iputId}}" type="text" value="" class="form-control"/>
+        </div>
+    </div>
+</template>
